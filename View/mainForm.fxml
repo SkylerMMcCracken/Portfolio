@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFormController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="195.0" prefWidth="250.0">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" text="Main Menu">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Button layoutX="41.0" layoutY="48.0" mnemonicParsing="false" onAction="#onActionViewCustomers" prefWidth="181.0" text="View Customer Information" />
+                <Button layoutX="41.0" layoutY="88.0" mnemonicParsing="false" onAction="#onActionViewAppointment" text="View Appointment Information" />
+                <Button layoutX="41.0" layoutY="127.0" mnemonicParsing="false" onAction="#onActionViewReports" prefWidth="181.0" text="View Reports" />
+                <Button fx:id="exitButton" layoutX="187.0" layoutY="162.0" mnemonicParsing="false" onAction="#onActionExit" text="Exit" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifyCustomersFormController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="318.0" prefWidth="412.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Modify Customer">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label layoutX="81.0" layoutY="48.0" text="ID:" />
+            <TextField fx:id="idField" editable="false" layoutX="162.0" layoutY="44.0" prefHeight="25.0" prefWidth="239.0" />
+            <Label layoutX="44.0" layoutY="81.0" text="Customer Name:" />
+            <TextField fx:id="nameField" layoutX="162.0" layoutY="77.0" prefHeight="25.0" prefWidth="239.0" />
+            <Label layoutX="65.0" layoutY="116.0" text="Address:" />
+            <Label layoutX="67.0" layoutY="151.0" text="Country:" />
+            <ComboBox fx:id="countryBox" layoutX="162.0" layoutY="147.0" onAction="#onActionCountrySelected" prefHeight="25.0" prefWidth="239.0" />
+            <TextField fx:id="addressField" layoutX="162.0" layoutY="112.0" prefHeight="25.0" prefWidth="239.0" />
+            <Label layoutX="68.0" layoutY="187.0" text="Region:" />
+            <ComboBox fx:id="regionBox" layoutX="162.0" layoutY="183.0" prefHeight="25.0" prefWidth="239.0" />
+            <Label layoutX="56.0" layoutY="221.0" text="Postal Code:" />
+            <TextField fx:id="postalField" layoutX="162.0" layoutY="217.0" prefHeight="25.0" prefWidth="239.0" />
+            <Label layoutX="47.0" layoutY="256.0" text="Phone Number:" />
+            <TextField fx:id="phoneField" layoutX="162.0" layoutY="252.0" prefHeight="25.0" prefWidth="239.0" />
+            <Button layoutX="265.0" layoutY="282.0" mnemonicParsing="false" onAction="#onActionSaveCustomer" text="Save Customer" />
+            <Button layoutX="366.0" layoutY="282.0" mnemonicParsing="false" onAction="#onActionExit" text="Exit" />
+         </children></AnchorPane>
+   </children>
+</GridPane>

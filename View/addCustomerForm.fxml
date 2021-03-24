@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddCustomerFormController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="346.0" prefWidth="427.0">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" text="Add New Customer">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="70.0" layoutY="55.0" text="ID:" />
+                <TextField fx:id="idField" editable="false" layoutX="139.0" layoutY="51.0" prefHeight="25.0" prefWidth="271.0" promptText="Auto-Gen Disabled" />
+                <Label layoutX="33.0" layoutY="92.0" text="Customer Name:" />
+                <TextField fx:id="nameField" layoutX="139.0" layoutY="88.0" prefHeight="25.0" prefWidth="271.0" />
+                <Label layoutX="55.0" layoutY="131.0" text="Address:" />
+                <TextField fx:id="addressField" layoutX="139.0" layoutY="127.0" prefHeight="25.0" prefWidth="271.0" />
+                <Label layoutX="55.0" layoutY="165.0" text="Country:" />
+                <ComboBox fx:id="countryBox" layoutX="139.0" layoutY="161.0" onAction="#onActionCountrySelected" prefHeight="25.0" prefWidth="271.0" promptText="Country" />
+                <Label layoutX="58.0" layoutY="202.0" text="Region:" />
+                <ComboBox fx:id="regionBox" layoutX="140.0" layoutY="198.0" prefHeight="25.0" prefWidth="271.0" promptText="State or Province" />
+                <Label layoutX="45.0" layoutY="239.0" text="Postal Code:" />
+                <TextField fx:id="postalField" layoutX="140.0" layoutY="235.0" prefHeight="25.0" prefWidth="271.0" />
+                <Label layoutX="37.0" layoutY="278.0" text="Phone Number:" />
+                <TextField fx:id="phoneField" layoutX="140.0" layoutY="274.0" prefHeight="25.0" prefWidth="271.0" />
+                <Button layoutX="378.0" layoutY="307.0" mnemonicParsing="false" onAction="#onActionExit" text="Exit" />
+                <Button layoutX="275.0" layoutY="307.0" mnemonicParsing="false" onAction="#onActionSaveCustomer" text="Save Customer" />
+
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
